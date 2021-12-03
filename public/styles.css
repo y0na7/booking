@@ -1,0 +1,31 @@
+
+h1, h2 {
+    background-color: rgb(255, 216, 211);
+    color: rgb(0, 196, 137);
+    border-style: double;
+    border-width: 2px;
+    padding: 50px;
+    font-style: oblique;
+  }
+  body {
+    background-image: linear-gradient(to bottom right, pink, crimson);
+    margin: 150px;
+  }
+
+  table{
+    background-image: url(200.gif);
+  }
+a:hover{
+  color:hotpink
+}
+
+img{
+  border: 5px solid indigo;
+}
+body { margin-bottom: 50px; 
+  margin-top: 100px; margin-left: 200px; margin-right: 100px;
+}
+
+img {
+  box-shadow: 10px 5px 10px 2px red
+}
