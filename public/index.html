@@ -5,7 +5,7 @@
         <script src="https://d3js.org/d3.v6.min.js"></script>
     </head>
     <body>
-        <h2>My Food</h2>
+        <h2>booking</h2>
         <script>
             d3.json('/booking').then(function(data) {
                 console.log(data)
@@ -42,8 +42,8 @@
                 }
 
                 // render the table(s)
-                tabulate(data.foods,
-                    ['lokale.lokale_id', 'lokale.navn', 'lokale.booking']
+                tabulate(data.booking,
+                    ['lokale_id', 'navn', 'bygning','underviser_id','mail','tlf','skostørrelse','adresse']
                 );
             })
             .catch(function(error) {
