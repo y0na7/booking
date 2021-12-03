@@ -7,10 +7,13 @@ h1, h2 {
     padding: 50px;
     font-style: oblique;
     background-image: url(200.gif);
+    font-size: large;
+
   }
   body {
-    background-image: url(res.gif);
-    margin: 150px;
+    background-image: url(res2.gif);
+    margin: 1550px;
+    font-size: larger;
   }
 a:hover{
   color:rgb(115, 105, 255)
@@ -25,4 +28,7 @@ body { margin-bottom: 50px;
 
 img {
   box-shadow: 10px 5px 10px 2px red
+}
+table {background-color: wheat;
+
 }
