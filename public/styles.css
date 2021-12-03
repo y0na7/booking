@@ -9,7 +9,7 @@ h1, h2 {
     background-image: url(200.gif);
   }
   body {
-    background-image: linear-gradient(to bottom right, rgb(255, 153, 170), rgb(45, 112, 156));
+    background-image: url(res.gif);
     margin: 150px;
   }
 a:hover{
