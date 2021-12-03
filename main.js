@@ -63,13 +63,13 @@ app.use(morgan("combined"));
  * Man laver lige så mange endpoints man har lyst til. Jeg har lavet et enkelt til
  * querien `SELECT 'Hello, World' as message`.
  */
-app.get("/booking/:lokale", async (req, res) => {
+app.get("/booking/", async (req, res) => {
     try {
     let pqry = `SELECT lokale.lokale_id, lokale.navn, lokale.bygning, underviser.underviser_id,
     underviser.navn, underviser.mail, underviser.tlf, underviser.skostørrelse, underviser.adresse
     FROM underviser` +
     ` Join lokale ON underviser.underviser_id = lokale.lokale_id`
-    let queryData = await klient.query(pqry);
+    let queryData = await client.query(pqry);
     // Giv svar tilbage til JavaScript
     res.json({
       "ok": true,
